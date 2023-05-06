@@ -1,0 +1,24 @@
+<app-not-found [visible]="!tool" 
+notFoundMessage="Product not found!"
+resetLinkText="Back to Homepage"
+>
+</app-not-found>
+<div  *ngIf="tool" class="container">
+    <img [src]="tool.imageUrl" [alt]="tool.name">
+    <div class="details"> 
+        
+        <div class="header">
+            <span class="name">{{tool.name}} </span>    
+        </div>
+       <div class="tags" >
+            <app-tags [toolPageTags]="tool.tags" justifyContent="start"></app-tags>
+        </div>
+        <div class="price">
+            <span>{{tool.price | priceHUF}} </span>
+        </div>
+        <button (click)="addToCart()" matt-button>Add to Cart</button>
+    </div>
+
+    
+
+</div>

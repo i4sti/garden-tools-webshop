@@ -1,0 +1,66 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+.container > * {
+    min-width: 25rem;
+    max-width: 40rem;
+}
+img{
+    border-radius: 3rem;
+    flex: 1 0;
+    border: 1px solid green;
+    height: 35rem;
+    margin: 1rem;
+
+}
+.tags{
+    pointer-events: none;
+    padding: .5rem;
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    border-radius: 3rem;
+    padding: 2rem;
+    color: black;
+    margin-left: 1rem;
+}
+
+.details .name{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.details .price{
+    font-size: 1.8rem;
+    margin: 2rem 2rem 2rem 0;
+    color: green;
+}
+.details .price::before{
+    content: "Price: ";
+    color: black;
+}
+
+.details button{
+    color: white;
+    background-color: green;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 10rem;
+
+}
+
+.details button:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+
+
+

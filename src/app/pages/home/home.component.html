@@ -1,0 +1,22 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<app-not-found [visible]="!tools || tools.length <= 0"  resetLinkText="Reset Search"></app-not-found>
+<ul class="card-list">
+  <li *ngFor="let tool of tools" class="card-list-item">
+    <a routerLink="/tool/{{tool.id}}" class="card-link">
+      <mat-card class="card">
+        <img mat-card-image [src]="tool.imageUrl" alt="">
+        <mat-card-content class="card-content">
+          <div class="card-title">
+            {{tool.name}}
+          </div>
+          <div class="card-subtitle">
+            Price: {{tool.price | priceHUF}}
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </a>
+  </li>
+</ul>
+
+  

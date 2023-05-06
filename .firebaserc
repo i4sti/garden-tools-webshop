@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "garden-tools-webshop": {
+      "hosting": {
+        "garden-tools-webshop": [
+          "garden-tools-webshop"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "garden-tools-webshop"
+  }
+}
