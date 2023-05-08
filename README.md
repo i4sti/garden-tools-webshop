@@ -28,4 +28,4 @@ Amiket elvileg megvalósitottam:
 -Legalább 2 különböző attribútum direktíva használata
 -Legalább 2 különböző strukturális direktíva használata
 -Adatátadás szülő és gyermek komponensek között (legalább 1 @Input és 1 @Output)
--Legalább 10 különböző Material elem helyes használata.
+-Legalább 10 különböző Material elem helyes használata. 
